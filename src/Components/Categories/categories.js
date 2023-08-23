@@ -1,7 +1,6 @@
 import React, { Fragment } from "react";
 import CategoriesData from "../Constents/Constent";
 import "./categories.style.scss";
-import { Outlet } from "react-router-dom";
 
 const Categories = () => {
   return (
@@ -20,7 +19,6 @@ const Categories = () => {
           </div>
         ))}
       </div>
-      <Outlet />
     </Fragment>
   );
 };

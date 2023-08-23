@@ -3,8 +3,9 @@ import { Link, Outlet } from "react-router-dom";
 import Categories from "../Categories/categories";
 import { ReactComponent as CrwnLogo } from "../../assest/crown.svg";
 import "./navigation.styles.scss";
+import Footer from "../Footer/footer";
 
-const Navigation = () => {
+const NavBarMain = () => {
   return (
     <Fragment>
       <div className="navigation">
@@ -12,22 +13,17 @@ const Navigation = () => {
           <CrwnLogo className="logo" />
         </Link>
         <div className="nav-links-container">
-          <Link className="nav-link" to="/home">
-            Home
-          </Link>
           <Link className="nav-link" to="/shop">
-            SHOP
+            Shop
           </Link>
-          <Link className="nav-link" to="/sign-in">
+          <Link className="nav-link" to="/signIn">
             SIGN IN
           </Link>
         </div>
       </div>
-
       <Outlet />
-      <Categories />
     </Fragment>
   );
 };
 
-export default Navigation;
+export default NavBarMain;

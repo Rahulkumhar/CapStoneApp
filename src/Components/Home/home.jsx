@@ -1,11 +1,18 @@
-import React from 'react';
+import React from "react";
+import NavBarMain from "../NavBarMain/navBarMain";
+import { Outlet } from "react-router-dom";
+import Categories from "../Categories/categories";
+import Footer from "../Footer/footer";
 
 const Home = () => {
-    return ( 
-        <>
-        <h1> Yupiieee !! we on Home Page.</h1>
-        </>
-     );
-}
- 
+  return (
+    <>
+      <NavBarMain />
+      <Categories />
+      <Outlet />
+      <Footer />
+    </>
+  );
+};
+
 export default Home;
