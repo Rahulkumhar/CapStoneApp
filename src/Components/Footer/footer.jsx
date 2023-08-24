@@ -124,7 +124,6 @@ const Footer = () => {
           </div>
         </div>
       </footer>
-      <Outlet />
     </Fragment>
   );
 };

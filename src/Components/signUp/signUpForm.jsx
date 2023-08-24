@@ -4,6 +4,9 @@ import {
   createAuthUserWithEmailAndPassword,
   createUserDocFromAuth,
 } from "../../Firebase/firebase.utils";
+import FormInput from "../comonComponents/formInput/formInput";
+import { SignUpContainer, SignUpTitle } from "./signUp.style";
+import CustomButton from "../comonComponents/customButton/customButton";
 
 const SignUpForm = () => {
   const [formFields, setFormFields] = useState(signUpFormObj);
@@ -44,48 +47,48 @@ const SignUpForm = () => {
   };
 
   return (
-    <>
-      <h1> Sign up with your email and password</h1>
+    <SignUpContainer>
+      <SignUpTitle>don't have a account</SignUpTitle>
+      <span>Sign up with your email and password</span>
       <form onSubmit={submitEmailAndPassword}>
-        <label> Full Name </label>
-        <input
-          aria-label="fullName"
+        <FormInput
           type="text"
-          required
           name="fullName"
           value={fullName}
           onChange={signUpFormHandle}
+          label="Full Name"
+          required
         />
-        <label> Email </label>
-        <input
+        <FormInput
           aria-label="email"
           type="text"
           required
           name="email"
           value={email}
+          label="Email"
           onChange={signUpFormHandle}
         />
-        <label> Password </label>
-        <input
+        <FormInput
           aria-label="password"
+          label="Password"
           type="password"
           required
           name="password"
           value={password}
           onChange={signUpFormHandle}
         />
-        <label> Confirm Password </label>
-        <input
+        <FormInput
           aria-label="confirmPassword"
+          label="Confirm Password"
           type="password"
           required
           name="confirmPassword"
           value={confirmPassword}
           onChange={signUpFormHandle}
         />
-        <button type="submit">Sign Up</button>
+        <CustomButton type="submit">Sign Up</CustomButton>
       </form>
-    </>
+    </SignUpContainer>
   );
 };
 

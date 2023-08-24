@@ -21,7 +21,7 @@ const NavBarMain = () => {
           </Link>
         </div>
       </div>
-      <Outlet />
+      {/* <Outlet /> */}
     </Fragment>
   );
 };
