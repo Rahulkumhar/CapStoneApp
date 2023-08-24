@@ -26,4 +26,11 @@ export const CategoriesData = [
   },
 ];
 
+export const signUpFormObj = {
+  fullName: "",
+  email: "",
+  password: "",
+  confirmPassword: "",
+};
+
 export default CategoriesData;

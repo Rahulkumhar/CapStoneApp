@@ -14,6 +14,10 @@ const router = createBrowserRouter([
         path: "/shop",
         element: <Shop />,
       },
+      {
+        path: "/signIn",
+        element: <SignIn />,
+      },
     ],
   },
   //   {
@@ -21,11 +25,11 @@ const router = createBrowserRouter([
   //     element: <Home />,
   //     errorElement: <ErrorPage />,
   //   },
-  {
-    path: "/signIn",
-    element: <SignIn />,
-    errorElement: <ErrorPage />,
-  },
+  // {
+  //   path: "/signIn",
+  //   element: <SignIn />,
+  //   errorElement: <ErrorPage />,
+  // },
 ]);
 
 export default router;

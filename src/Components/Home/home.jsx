@@ -7,7 +7,6 @@ import Footer from "../Footer/footer";
 const Home = () => {
   return (
     <>
-      <NavBarMain />
       <Categories />
       <Outlet />
       <Footer />
